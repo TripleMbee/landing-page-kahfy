@@ -13,7 +13,7 @@ const Footer = () => {
           <a href="https://x.com/Fy_uhuyy" className="text-nature hover:text-white transition-colors">
             <FaTwitter className="text-2xl" />
           </a>
-          <a href="https://www.facebook.com/muh.kahfy.2025" className="text-nature hover:text-white transition-colors">
+          <a href="www.facebook.com/muh.kahfy.2025" className="text-nature hover:text-white transition-colors">
             <FaFacebook className="text-2xl" />
           </a>
         </div>
