@@ -7,13 +7,13 @@ const Footer = () => {
       {/* Fixed Social Media Menu */}
       <div className="fixed right-4 top-1/2 transform -translate-y-1/2 bg-forest-light p-4 rounded-lg shadow-lg z-50">
         <div className="flex flex-col space-y-4">
-          <a href="#" className="text-nature hover:text-white transition-colors">
+          <a href="https://www.instagram.com/_kahfyy" className="text-nature hover:text-white transition-colors">
             <FaInstagram className="text-2xl" />
           </a>
-          <a href="#" className="text-nature hover:text-white transition-colors">
+          <a href="https://x.com/Fy_uhuyy" className="text-nature hover:text-white transition-colors">
             <FaTwitter className="text-2xl" />
           </a>
-          <a href="#" className="text-nature hover:text-white transition-colors">
+          <a href="https://www.facebook.com/muh.kahfy.2025" className="text-nature hover:text-white transition-colors">
             <FaFacebook className="text-2xl" />
           </a>
         </div>
