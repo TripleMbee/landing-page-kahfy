@@ -6,18 +6,37 @@ const Footer = () => {
     <>
       {/* Fixed Social Media Menu */}
       <div className="fixed right-4 top-1/2 transform -translate-y-1/2 bg-forest-light p-4 rounded-lg shadow-lg z-50">
-        <div className="flex flex-col space-y-4">
-          <a href="https://www.instagram.com/_kahfyy" className="text-nature hover:text-white transition-colors">
-            <FaInstagram className="text-2xl" />
-          </a>
-          <a href="https://x.com/Fy_uhuyy" className="text-nature hover:text-white transition-colors">
-            <FaTwitter className="text-2xl" />
-          </a>
-          <a href="www.facebook.com/muh.kahfy.2025" className="text-nature hover:text-white transition-colors">
-            <FaFacebook className="text-2xl" />
-          </a>
-        </div>
-      </div>
+  <div className="flex flex-col space-y-4">
+    <a
+      href="https://www.instagram.com/_kahfyy"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+      className="text-nature hover:text-white hover:scale-110 transition-transform duration-300"
+    >
+      <FaInstagram className="text-3xl" />
+    </a>
+    <a
+      href="https://x.com/Fy_uhuyy"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Twitter/X"
+      className="text-nature hover:text-white hover:scale-110 transition-transform duration-300"
+    >
+      <FaTwitter className="text-3xl" />
+    </a>
+    <a
+      href="https://www.facebook.com/muh.kahfy.2025"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook"
+      className="text-nature hover:text-white hover:scale-110 transition-transform duration-300"
+    >
+      <FaFacebook className="text-3xl" />
+    </a>
+  </div>
+</div>
+
 
       <footer id="contact" className="bg-forest py-16 px-4">
         <div className="max-w-7xl mx-auto">
