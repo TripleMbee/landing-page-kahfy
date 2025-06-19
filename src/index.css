@@ -4,12 +4,46 @@
 
 @layer base {
   body {
-    @apply bg-forest text-white;
+    @apply text-white;
+    background: linear-gradient(to left bottom, #4907a8, #005bd8, #0082d5, #00a1b4, #00bb94, #00c98c, #00d77f, #00e46c, #00ed98, #00f4be, #00fadf, #00fffa);
+    background-attachment: fixed;
   }
 }
 
 @layer components {
   .hover-scale {
     @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  .glass-effect {
+    @apply bg-black/20 backdrop-blur-md border border-white/30 shadow-xl;
+  }
+  
+  .glass-effect-dark {
+    @apply bg-black/40 backdrop-blur-lg border border-white/20 shadow-2xl;
+  }
+  
+  .card-effect {
+    @apply bg-black/30 backdrop-blur-md border border-white/25 shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-highlight text-primary px-6 py-3 rounded-lg font-semibold hover:bg-light transition-all duration-300 hover:scale-105 shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-white/25 backdrop-blur-md text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/35 transition-all duration-300 shadow-lg;
+  }
+  
+  .text-primary-white {
+    @apply text-white;
+  }
+  
+  .text-secondary-white {
+    @apply text-gray-200;
+  }
+  
+  .text-muted-white {
+    @apply text-gray-300;
   }
 } 

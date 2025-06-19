@@ -18,33 +18,33 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-forest to-sky">
+    <div className="min-h-screen">
       {/* Top Dashboard */}
-      <div className="fixed top-0 left-0 right-0 bg-forest text-white p-4 z-50">
+      <div className="fixed top-0 left-0 right-0 glass-effect-dark p-4 z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div>
-            <h1 className="text-2xl font-bold">Kahfyy</h1>
-            <p className="text-nature">Fail is not an option</p>
+            <h1 className="text-2xl font-bold text-primary-white">Your Brand</h1>
+            <p className="text-secondary-white">Your tagline here</p>
           </div>
-          <div className="p-4 bg-forest-light rounded-lg">
-            <h3 className="font-semibold mb-2">My journey</h3>
+          <div className="glass-effect p-4 rounded-lg">
+            <h3 className="font-semibold mb-2 text-primary-white">Welcome</h3>
             <div className="flex space-x-4 text-sm">
-              <p>come from nature back to nature</p>
+              <p className="text-secondary-white">Customize this section</p>
             </div>
           </div>
         </div>
       </div>
 
       {/* Slide Menu */}
-      <div className={`fixed top-0 left-0 right-0 bg-forest text-white p-4 z-40 transition-transform duration-300 ${showSlideMenu ? 'translate-y-0' : '-translate-y-full'}`}>
+      <div className={`fixed top-0 left-0 right-0 glass-effect-dark p-4 z-40 transition-transform duration-300 ${showSlideMenu ? 'translate-y-0' : '-translate-y-full'}`}>
         <div className="max-w-7xl mx-auto flex justify-center space-x-8">
-          <button onClick={() => document.getElementById('home').scrollIntoView({ behavior: 'smooth' })} className="text-nature hover:text-white transition-colors">
+          <button onClick={() => document.getElementById('home').scrollIntoView({ behavior: 'smooth' })} className="text-secondary-white hover:text-white transition-colors font-medium">
             Home
           </button>
-          <button onClick={() => document.getElementById('mountains').scrollIntoView({ behavior: 'smooth' })} className="text-nature hover:text-white transition-colors">
-            Mountains
+          <button onClick={() => document.getElementById('features').scrollIntoView({ behavior: 'smooth' })} className="text-secondary-white hover:text-white transition-colors font-medium">
+            Features
           </button>
-          <button onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })} className="text-nature hover:text-white transition-colors">
+          <button onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })} className="text-secondary-white hover:text-white transition-colors font-medium">
             Contact
           </button>
         </div>

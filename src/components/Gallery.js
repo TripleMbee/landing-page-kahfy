@@ -1,111 +1,121 @@
 import React from 'react';
 
 const Gallery = () => {
-  const merbabuImages = [
+  const features = [
     {
-      url: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1200&q=80",
-      title: "Merbabu Summit",
-      description: "The highest point of Mount Merbabu at 3,145 meters above sea level"
+      icon: "🚀",
+      title: "Feature One",
+      description: "This is a customizable feature description. Replace this text with your own content to showcase what makes your product or service unique.",
+      color: "bg-highlight"
     },
     {
-      url: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1200&q=80",
-      title: "Merbabu Crater",
-      description: "Ancient volcanic crater with unique geological formations"
+      icon: "💡",
+      title: "Feature Two", 
+      description: "Another customizable feature section. Describe your key benefits, services, or product features here to engage your visitors.",
+      color: "bg-accent"
     },
     {
-      url: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1200&q=80",
-      title: "Merbabu Sunrise",
-      description: "Breathtaking sunrise views from the summit"
+      icon: "✨",
+      title: "Feature Three",
+      description: "The third feature section. Use this space to highlight important aspects of your business, technology, or service offerings.",
+      color: "bg-success"
     }
   ];
 
-  const sumbingImages = [
+  const services = [
     {
-      url: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1200&q=80",
-      title: "Sumbing Peak",
-      description: "The majestic peak of Mount Sumbing at 3,371 meters"
+      title: "Service One",
+      description: "Customize this service description to match your business offerings. This could be a product, service, or solution you provide.",
+      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
     },
     {
-      url: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1200&q=80",
-      title: "Sumbing Crater",
-      description: "The impressive crater with its unique landscape"
+      title: "Service Two",
+      description: "Another service or product description. Make this relevant to your industry, whether it's technology, consulting, design, or any other field.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
     },
     {
-      url: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1200&q=80",
-      title: "Sumbing Trail",
-      description: "Scenic hiking trails through lush vegetation"
+      title: "Service Three", 
+      description: "The third service section. Use compelling descriptions that resonate with your target audience and clearly communicate value.",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
     }
   ];
 
-  const kembangImages = [
-    {
-      url: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1200&q=80",
-      title: "Kembang Summit",
-      description: "The beautiful peak of Mount Kembang"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1200&q=80",
-      title: "Kembang Forest",
-      description: "Rich biodiversity in the mountain's forest"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1200&q=80",
-      title: "Kembang View",
-      description: "Panoramic views of the surrounding landscape"
-    }
-  ];
+  const FeatureCard = ({ icon, title, description, color }) => (
+    <div className="card-effect p-6 rounded-xl text-center hover-scale">
+      <div className={`w-16 h-16 ${color} rounded-full mx-auto mb-4 flex items-center justify-center`}>
+        <span className="text-primary font-bold text-2xl">{icon}</span>
+      </div>
+      <h3 className="text-xl font-semibold mb-3 text-primary-white">{title}</h3>
+      <p className="text-secondary-white">{description}</p>
+    </div>
+  );
 
-  const MountainSection = ({ title, description, images }) => (
-    <div className="mb-16">
-      <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
-      <p className="text-nature mb-8 max-w-2xl">{description}</p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {images.map((image, index) => (
-          <div key={index} className="relative group overflow-hidden rounded-lg">
-            <img
-              src={image.url}
-              alt={image.title}
-              className="w-full h-[500px] object-cover transform group-hover:scale-110 transition-transform duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-forest to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div className="absolute bottom-0 p-6 text-white">
-                <h3 className="text-xl font-semibold mb-2">{image.title}</h3>
-                <p className="text-nature">{image.description}</p>
-              </div>
-            </div>
-          </div>
-        ))}
+  const ServiceCard = ({ title, description, image }) => (
+    <div className="card-effect rounded-xl overflow-hidden hover-scale">
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-48 object-cover"
+      />
+      <div className="p-6">
+        <h3 className="text-xl font-semibold mb-3 text-primary-white">{title}</h3>
+        <p className="text-secondary-white mb-4">{description}</p>
+        <button className="btn-secondary w-full">
+          Learn More
+        </button>
       </div>
     </div>
   );
 
   return (
-    <section id="mountains" className="py-16 px-4 bg-forest-light">
+    <section id="features" className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">Central Java Mountains</h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-6 text-primary-white">
+            Our Features
+          </h2>
+          <p className="text-xl text-secondary-white max-w-2xl mx-auto">
+            Discover what makes us different and how we can help you achieve your goals
+          </p>
+        </div>
         
-        <MountainSection
-          title="Mount Merbabu"
-          description="Mount Merbabu is a dormant stratovolcano in Central Java, Indonesia. Known for its beautiful crater and stunning views, it's a popular destination for hikers and nature enthusiasts. The mountain offers various trails with different difficulty levels, making it accessible for both beginners and experienced climbers."
-          images={merbabuImages}
-        />
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          {features.map((feature, index) => (
+            <FeatureCard key={index} {...feature} />
+          ))}
+        </div>
 
-        <MountainSection
-          title="Mount Sumbing"
-          description="Mount Sumbing is one of the highest volcanoes in Central Java, standing at 3,371 meters. It features a large crater and offers spectacular views of the surrounding landscape. The mountain is known for its challenging trails and beautiful sunrise views from the summit."
-          images={sumbingImages}
-        />
+        {/* Services Section */}
+        <div className="text-center mb-12">
+          <h3 className="text-3xl font-bold mb-6 text-primary-white">Our Services</h3>
+          <p className="text-secondary-white max-w-2xl mx-auto">
+            Explore our comprehensive range of services designed to meet your needs
+          </p>
+        </div>
 
-        <MountainSection
-          title="Mount Kembang"
-          description="Mount Kembang, though smaller than its neighbors, offers unique natural beauty and rich biodiversity. The mountain is surrounded by lush forests and provides excellent opportunities for nature photography and wildlife observation."
-          images={kembangImages}
-        />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {services.map((service, index) => (
+            <ServiceCard key={index} {...service} />
+          ))}
+        </div>
 
-        <div className="text-center mt-12">
-          <button className="bg-nature text-forest px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white transition-colors">
-            Plan Your Hike
-          </button>
+        {/* Call to Action */}
+        <div className="text-center">
+          <div className="glass-effect-dark p-8 rounded-2xl max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold mb-4 text-primary-white">Ready to Get Started?</h3>
+            <p className="text-secondary-white mb-6">
+              Join thousands of satisfied customers who have transformed their business with our solutions
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="btn-primary">
+                Start Free Trial
+              </button>
+              <button className="btn-secondary">
+                Schedule Demo
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
