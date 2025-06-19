@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram, FaTwitter, FaFacebook, FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="fixed right-4 top-1/2 transform -translate-y-1/2 glass-effect-dark p-4 rounded-lg shadow-lg z-50">
         <div className="flex flex-col space-y-4">
           <a
-            href="#"
+            href="https://www.instagram.com/_kahfyy"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -17,7 +17,7 @@ const Footer = () => {
             <FaInstagram className="text-3xl" />
           </a>
           <a
-            href="#"
+            href="https://x.com/Fy_uhuyy"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter/X"
@@ -26,7 +26,7 @@ const Footer = () => {
             <FaTwitter className="text-3xl" />
           </a>
           <a
-            href="#"
+            href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -35,7 +35,7 @@ const Footer = () => {
             <FaLinkedin className="text-3xl" />
           </a>
           <a
-            href="#"
+            href="https://github.com/TripleMbee"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -128,9 +128,9 @@ const Footer = () => {
           <div className="border-t border-white/20 pt-8 text-center text-secondary-white">
             <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
             <div className="mt-4 space-x-4">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+              <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
+              <a href="/cookies" className="hover:text-white transition-colors">Cookie Policy</a>
             </div>
           </div>
         </div>
