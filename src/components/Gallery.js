@@ -41,26 +41,26 @@ const Gallery = () => {
   ];
 
   const FeatureCard = ({ icon, title, description, color }) => (
-    <div className="card-effect p-6 rounded-xl text-center hover-scale">
-      <div className={`w-16 h-16 ${color} rounded-full mx-auto mb-4 flex items-center justify-center`}>
-        <span className="text-primary font-bold text-2xl">{icon}</span>
+    <div className="card-effect p-4 sm:p-6 rounded-xl text-center hover-scale mb-4 md:mb-0">
+      <div className={`w-14 h-14 sm:w-16 sm:h-16 ${color} rounded-full mx-auto mb-2 sm:mb-4 flex items-center justify-center`}>
+        <span className="text-primary font-bold text-xl sm:text-2xl">{icon}</span>
       </div>
-      <h3 className="text-xl font-semibold mb-3 text-primary-white">{title}</h3>
-      <p className="text-secondary-white">{description}</p>
+      <h3 className="text-base sm:text-xl font-semibold mb-2 text-primary-white">{title}</h3>
+      <p className="text-secondary-white text-xs sm:text-base">{description}</p>
     </div>
   );
 
   const ServiceCard = ({ title, description, image }) => (
-    <div className="card-effect rounded-xl overflow-hidden hover-scale">
+    <div className="card-effect rounded-xl overflow-hidden hover-scale mb-4 md:mb-0">
       <img
         src={image}
         alt={title}
-        className="w-full h-48 object-cover"
+        className="w-full h-40 sm:h-48 object-cover"
       />
-      <div className="p-6">
-        <h3 className="text-xl font-semibold mb-3 text-primary-white">{title}</h3>
-        <p className="text-secondary-white mb-4">{description}</p>
-        <button className="btn-secondary w-full">
+      <div className="p-4 sm:p-6">
+        <h3 className="text-base sm:text-xl font-semibold mb-2 text-primary-white">{title}</h3>
+        <p className="text-secondary-white mb-2 sm:mb-4 text-xs sm:text-base">{description}</p>
+        <button className="btn-secondary w-full min-h-[44px]">
           Learn More
         </button>
       </div>
@@ -103,13 +103,13 @@ const Gallery = () => {
         {/* Call to Action */}
         <div className="text-center">
           <div className="glass-effect-dark p-8 rounded-2xl max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4 text-primary-white">Ready to Get Started?</h3>
+            <h3 className="text-2xl font-bold mb-4 text-primary-white">Ready to Build Your Dream Website?</h3>
             <p className="text-secondary-white mb-6">
-              Join thousands of satisfied customers who have transformed their business with our solutions
+              Join thousands of satisfied customers who have transformed their business with our solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="btn-primary">
-                Start Free Trial
+                
               </button>
               <button className="btn-secondary">
                 Schedule Demo

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       {/* Fixed Social Media Menu */}
-      <div className="fixed right-4 top-1/2 transform -translate-y-1/2 glass-effect-dark p-4 rounded-lg shadow-lg z-50">
+      <div className="hidden md:fixed md:right-4 md:top-1/2 md:transform md:-translate-y-1/2 glass-effect-dark p-4 rounded-lg shadow-lg z-50 md:block">
         <div className="flex flex-col space-y-4">
           <a
             href="https://www.instagram.com/_kahfyy"
@@ -64,15 +64,15 @@ const Footer = () => {
               <div className="space-y-4">
                 <p className="flex items-center space-x-3">
                   <FaEnvelope className="text-highlight text-xl" />
-                  <span className="text-secondary-white">hello@yourcompany.com</span>
+                  <span className="text-secondary-white">muhammadkahfy13@gmail.com</span>
                 </p>
                 <p className="flex items-center space-x-3">
                   <FaPhone className="text-highlight text-xl" />
-                  <span className="text-secondary-white">+1 (555) 123-4567</span>
+                  <span className="text-secondary-white">+62 821-3689-0483</span>
                 </p>
                 <p className="flex items-center space-x-3">
                   <FaMapMarkerAlt className="text-highlight text-xl" />
-                  <span className="text-secondary-white">Your City, State 12345</span>
+                  <span className="text-secondary-white">Prapatan arab belok kanan</span>
                 </p>
               </div>
             </div>
@@ -126,7 +126,7 @@ const Footer = () => {
           </div>
 
           <div className="border-t border-white/20 pt-8 text-center text-secondary-white">
-            <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} FyStudio.co   All rights reserved.</p>
             <div className="mt-4 space-x-4">
               <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
