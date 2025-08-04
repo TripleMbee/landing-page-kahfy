@@ -4,39 +4,39 @@ const Gallery = () => {
   const features = [
     {
       icon: "🚀",
-      title: "Feature One",
-      description: "This is a customizable feature description. Replace this text with your own content to showcase what makes your product or service unique.",
+      title: "Anything one",
+      description: "This is a customizable description. Replace this text with your own content to showcase what makes your product or service unique.",
       color: "bg-highlight"
     },
     {
       icon: "💡",
-      title: "Feature Two", 
-      description: "Another customizable feature section. Describe your key benefits, services, or product features here to engage your visitors.",
+      title: "Anything Two",
+      description: "Another customizable section. Describe your key benefits, services, or product features here to engage your visitors.",
       color: "bg-accent"
     },
     {
       icon: "✨",
-      title: "Feature Three",
-      description: "The third feature section. Use this space to highlight important aspects of your business, technology, or service offerings.",
+      title: "Anything Three",
+      description: "The third section. Use this space to highlight important aspects of your business, technology, or service offerings.",
       color: "bg-success"
     }
   ];
 
   const services = [
     {
-      title: "Service One",
-      description: "Customize this service description to match your business offerings. This could be a product, service, or solution you provide.",
-      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
+      title: "Chick noodle",
+      description: "In a nameless alley stands a plate of happiness —chewy yellow noodles, sweet chicken, and warm broth. Its price is kind, its flavor tender.",
+      image: "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/95576cb9-b73b-4c3d-bbe0-6a5d6db5f27f_Go-Biz_20210127_125002.jpeg"
     },
     {
-      title: "Service Two",
-      description: "Another service or product description. Make this relevant to your industry, whether it's technology, consulting, design, or any other field.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
+      title: "Tesla",
+      description: "Not just a car, but Elon’s dream gliding without a sound, smarter than your lecturer, faster than your ex dodging responsibilities.",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/2024_Tesla_Cybertruck_Foundation_Series%2C_front_left_%28Greenwich%29.jpg/1200px-2024_Tesla_Cybertruck_Foundation_Series%2C_front_left_%28Greenwich%29.jpg"
     },
     {
-      title: "Service Three", 
-      description: "The third service section. Use compelling descriptions that resonate with your target audience and clearly communicate value.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
+      title: "Saitama",
+      description: "One punch stronger than all your unpaid bills, the bald hero with a blank face full of boredom. Not because he's weak, but because everything is too easy.",
+      image: "https://image.idntimes.com/post/20250407/images-2025-04-07t223522601-a24cd90f8fe753b2574a253f62fae9c8.jpeg"
     }
   ];
 
@@ -78,7 +78,7 @@ const Gallery = () => {
             Discover what makes us different and how we can help you achieve your goals
           </p>
         </div>
-        
+
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {features.map((feature, index) => (
@@ -109,7 +109,7 @@ const Gallery = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="btn-primary">
-                
+
               </button>
               <button className="btn-secondary">
                 Schedule Demo

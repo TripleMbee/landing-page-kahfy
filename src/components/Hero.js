@@ -39,7 +39,7 @@ const Hero = () => {
             <div className="w-12 h-12 bg-highlight rounded-full mx-auto mb-2 sm:mb-4 flex items-center justify-center">
               <span className="text-primary font-bold text-xl">✨</span>
             </div>
-            <h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2 text-primary-white">Feature One</h3>
+            <h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2 text-primary-white">Anything One</h3>
             <p className="text-secondary-white text-xs sm:text-sm">Online Store Websites
             Sell your products with a professional and modern design</p>
           </div>
@@ -47,7 +47,7 @@ const Hero = () => {
             <div className="w-12 h-12 bg-accent rounded-full mx-auto mb-2 sm:mb-4 flex items-center justify-center">
               <span className="text-primary font-bold text-xl">🚀</span>
             </div>
-            <h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2 text-primary-white">Feature Two</h3>
+            <h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2 text-primary-white">Anything Two</h3>
             <p className="text-secondary-white text-xs sm:text-sm">Business Profile Websites
             Boost your brand's credibility with a beautiful website</p>
           </div>
@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="w-12 h-12 bg-success rounded-full mx-auto mb-2 sm:mb-4 flex items-center justify-center">
               <span className="text-primary font-bold text-xl">💡</span>
             </div>
-            <h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2 text-primary-white">Feature Three</h3>
+            <h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2 text-primary-white">Anything Three</h3>
             <p className="text-secondary-white text-xs sm:text-sm">Custom Website Development
             Have a unique idea? Let's build it together</p>
           </div>
