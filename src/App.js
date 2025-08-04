@@ -9,8 +9,6 @@ import Register from './pages/Register';
 
 function App() {
   const [showSlideMenu, setShowSlideMenu] = useState(false);
-  const [showWelcome, setShowWelcome] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
@@ -18,17 +16,12 @@ function App() {
       const scrollPosition = window.scrollY;
       setShowSlideMenu(scrollPosition > 100); // Show menu after scrolling 100px
     };
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
     const checkAuthStatus = () => {
       const token = localStorage.getItem('token');
       setIsLoggedIn(!!token);
     };
     
     window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleResize);
-    handleResize(); // Set initial value
     checkAuthStatus(); // Check initial auth status
     
     // Listen for storage changes (when token is added/removed)
@@ -36,7 +29,6 @@ function App() {
     
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize);
       window.removeEventListener('storage', checkAuthStatus);
     };
   }, []);
